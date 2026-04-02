@@ -68,7 +68,40 @@ web_modules/
 # dotenv environment variable files
 .env
 .env.*
+.env.local
+.env.production
+.env.development
 !.env.example
+
+# AWS Credentials and Config
+.aws/
+aws-credentials.json
+credentials.json
+aws-config.json
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.history/
+.ionide/
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.pem
+*.key
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -97,6 +130,37 @@ dist
 
 # Sveltekit cache directory
 .svelte-kit/
+
+# LocalStack
+.localstack/
+localstack-data/
+tmp/
+/tmp/
+
+# Build outputs
+dist/
+build/
+.build/
+*.o
+*.a
+*.so
+
+# Package Manager Logs
+package-lock.json.swp
+yarn-error.log.swp
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+.#*
+
 
 # vitepress build output
 **/.vitepress/dist
